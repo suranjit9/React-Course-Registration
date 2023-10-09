@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types';
 
 const RemeningCadit = ({CaditHour, showAlert}) => {
     console.log(showAlert);
@@ -14,5 +14,9 @@ const RemeningCadit = ({CaditHour, showAlert}) => {
         </div>
     );
 };
+RemeningCadit.propTypes ={
+    CaditHour:PropTypes.object.isRequired,
+    showAlert:PropTypes.object.isRequired,
+}
 
 export default RemeningCadit;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import SingalData from "./SingalData";
 
 
@@ -15,14 +16,19 @@ const BookCourses = ({ cards }) => {
                 {
                     cards.map((data, idx) => <SingalData
                         key={idx}
+                        idx={idx + 1}
                         data={data}
-                        
+
                     ></SingalData>)
                 }
             </div>
-            
+
         </div>
     );
 };
+BookCourses.propTypes ={
+    cards: PropTypes.object,
+    
+}
 
 export default BookCourses;

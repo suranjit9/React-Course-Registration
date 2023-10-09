@@ -18,6 +18,7 @@ const Courses = ({ handleCard }) => {
                     key={SingalCard.id}
                     SingalCard={SingalCard}
                     handleCard={handleCard}
+                    
                 ></Course>)
             }
         </div>
