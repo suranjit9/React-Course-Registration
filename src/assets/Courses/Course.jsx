@@ -11,7 +11,7 @@ const Course = ({SingalCard, handleCard}) => {
                 <p>📖 Credit : {credit} hr</p>
               
             </div>
-                <button onClick={()=>{handleCard(SingalCard)}} className='w-full rounded-lg bg-[#2F80ED] pt-1 pb-1'>Select</button>
+                <button onClick={()=>{handleCard(SingalCard,credit,price)}} className='w-full rounded-lg bg-[#2F80ED] pt-1 pb-1'>Select</button>
         </div>
     );
 };
