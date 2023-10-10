@@ -4,7 +4,7 @@ import { useState } from "react";
 import Course from "./Course";
 
 
-const Courses = ({ handleCard }) => {
+const Courses = ({ handleCard}) => {
     const [card, setCard] = useState([]);
     useEffect(() => {
         fetch('/public/card.json')
@@ -18,6 +18,7 @@ const Courses = ({ handleCard }) => {
                     key={SingalCard.id}
                     SingalCard={SingalCard}
                     handleCard={handleCard}
+                   
                     
                 ></Course>)
             }

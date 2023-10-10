@@ -14,7 +14,7 @@ function App() {
   const [hour, setHour] = useState(0);
   const [price, setPrice] = useState(0);
   const [CaditHour, setCaditHour] = useState(20);
-
+  
   const [showAlert, setShowAlert] = useState(false);
 
 
@@ -34,7 +34,8 @@ function App() {
         setShowAlert(true);
       }
     }else{
-      alert('One time ADD');
+      // alert('One time ADD');
+      alert('hiugiuh')
     }
   }
 
@@ -51,6 +52,7 @@ return (
       <div className='w-4/4'>
         <Courses
           handleCard={handleCard}
+        
           
         ></Courses>
       </div>

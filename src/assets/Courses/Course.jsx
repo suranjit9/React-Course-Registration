@@ -1,8 +1,16 @@
 
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 
 const Course = ({ SingalCard, handleCard }) => {
     const { image, title, description, price, credit } = SingalCard;
+    const [color, setColor] =useState();
+    const disabal = ()=>{
+        handleCard(SingalCard, credit, price) ;
+        setColor('bg-gray-300');
+    }
+    
+
     return (
         <div className='p-2 border-2 border-2 bg-slate-50 rounded-lg space-y-1.5'>
             <img src={image} alt="" />
@@ -14,7 +22,7 @@ const Course = ({ SingalCard, handleCard }) => {
 
             </div>
           
-            <button onClick={() => { handleCard(SingalCard, credit, price) }} className='w-full rounded-lg bg-[#2F80ED] pt-1 pb-1'>Select</button>
+            <button id ="hello" onClick={disabal} className={`${color} w-full rounded-lg bg-[#2F80ED] pt-1 pb-1`}>Select</button>
         </div>
     );
 };
